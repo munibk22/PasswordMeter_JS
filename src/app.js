@@ -26,6 +26,8 @@ function calculatePasswordStrength(password) {
     weaknesses.push(lengthWeakness(password));
     weaknesses.push(lowerCaseWeakness(password));
     weaknesses.push(upperCaseWeakness(password));
+    weaknesses.push(numberWeakness(password));
+    weaknesses.push(specialCharctersWeakness(password));
     return weaknesses;
 }
 
@@ -47,7 +49,7 @@ function lengthWeakness(password) {
 
 function lowerCaseWeakness(password) {
     const matches = password.match(/[a-z]/g) || [];
-    return chracterTypeWeakness(password, /[a-z]/g, lowercase);
+    return chracterTypeWeakness(password, /[a-z]/g, "lowercase");
     // if (matches.length == 0) {
     //     return {
 
@@ -65,15 +67,7 @@ function lowerCaseWeakness(password) {
 
 function upperCaseWeakness(password) {
     const matches = password.match(/[A-Z]/g) || [];
-    return chracterTypeWeakness(password, /[a-z]/g, lowercase);
-    // if (matches.length == 0) {
-    //     return {
-
-    //         message: "Your password has no Uppercase letters",
-    //         deduction: 30
-    //     }
-    // }
-
+    return chracterTypeWeakness(password, /[a-z]/g, "Uppercase");
 }
 
 function chracterTypeWeakness(password, regex, type) {
@@ -92,4 +86,14 @@ function chracterTypeWeakness(password, regex, type) {
         }
     }
 
+}
+
+function numberWeakness(password) {
+    const matches = password.match(/[A-Z]/g) || [];
+    return chracterTypeWeakness(password, /[0-9]/g, "numbers");
+}
+
+function specialCharctersWeakness(password) {
+    const matches = password.match(/[^0-9A-Za-z\s]/g) || [];
+    return chracterTypeWeakness(password, /[^0-9A-Za-z\s]/g, "special characters");
 }
