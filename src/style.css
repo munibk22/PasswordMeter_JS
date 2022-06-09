@@ -6,15 +6,41 @@
 
 body {
   background-color: hsl(0, 0%, 93%);
-  color: hsl(0, 0%, 40%);
+  color: hsl(123, 95%, 15%);
   text-align: center;
 }
 
 .strength-meter {
+  position: relative;
   height: 2rem;
-  width: 50%;
-  border: 3px solid hsl(0, 0%, 44%);
+  width: 25%;
+  border: 3px solid hsl(123, 95%, 20%);
   border-radius: 1rem;
   margin: 0 auto;
   margin-bottom: 3rem;
+  overflow: hidden;
+}
+
+.strength-meter::before {
+  --strength: 25;
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 99%;
+  width: calc(1% * var(--strength, 0));
+  background-color: hsl(123, 95%, 40%);
+
+  transition: width 200ms;
+}
+
+.password-input {
+  width: 15%;
+  padding: 0.25rem 0.75rem;
+  border: 2px solid hsl(123, 95%, 20%);
+  border-radius: 1rem;
+  outline: none;
+}
+
+.password-input:focus {
+  border: 2px solid hsl(123, 95%, 35%);
 }
