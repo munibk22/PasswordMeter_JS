@@ -14,7 +14,9 @@
 ![Intial Loading page](src/media/1.png)
 
 **Weak Password:**
+
 ![Weak Password](src/media/2.png)
 
 **Dynamically displays error messages**
+
 ![Display Error Messages](/src/media/3.png)
