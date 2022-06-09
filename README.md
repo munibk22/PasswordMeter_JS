@@ -6,7 +6,7 @@
 - CSS
 
 <p align="center" style="color: red; font-weight: bold font-size: 30px;"  >
-***Simple JavaScript Project to test password strength.***
+***Fun and Simple JavaScript Project to test password strength.***
 </p>
 
 **Initial State:**
