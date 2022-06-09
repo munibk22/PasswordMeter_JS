@@ -17,6 +17,8 @@
 
 ![Weak Password](src/media/2.png)
 
+![Display Error Messages](/src/media/5.png)
+
 **Dynamically displays error messages**
 
 ![Display Error Messages](/src/media/3.png)

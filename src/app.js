@@ -28,6 +28,7 @@ function calculatePasswordStrength(password) {
     weaknesses.push(upperCaseWeakness(password));
     weaknesses.push(numberWeakness(password));
     weaknesses.push(specialCharctersWeakness(password));
+    weaknesses.push(firstCharToUpper(password));
     return weaknesses;
 }
 
@@ -75,7 +76,7 @@ function chracterTypeWeakness(password, regex, type) {
     if (matches.length == 0) {
         return {
 
-            message: `Your password has no ${type} letters`,
+            message: `Your password has no ${type} letter`,
             deduction: 30
         }
     }
@@ -90,10 +91,14 @@ function chracterTypeWeakness(password, regex, type) {
 
 function numberWeakness(password) {
     const matches = password.match(/[A-Z]/g) || [];
-    return chracterTypeWeakness(password, /[0-9]/g, "numbers");
+    return chracterTypeWeakness(password, /[0-9]/g, "number");
 }
 
 function specialCharctersWeakness(password) {
     const matches = password.match(/[^0-9A-Za-z\s]/g) || [];
-    return chracterTypeWeakness(password, /[^0-9A-Za-z\s]/g, "special characters");
+    return chracterTypeWeakness(password, /[^0-9A-Za-z\s]/g, "special character");
+}
+function firstCharToUpper(password) {
+    let regexp = /^[A-Z]/;
+    return chracterTypeWeakness(password, regexp, "first UpperCase");
 }
