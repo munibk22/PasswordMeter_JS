@@ -1,4 +1,9 @@
-**Project Name: PasswordMeter_JS**
+** Password Meter Test**
+Written Using:
+
+- Javascript
+- HTML
+- CSS
 
 <p align="center" style="color: red; font-weight: bold font-size: 30px;"  >
 ***Simple JavaScript Project to test password strength.***
