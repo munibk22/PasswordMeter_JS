@@ -1,5 +1,5 @@
 <p align="center" color='green' >
-  <strong>PasswordMeter_JS</strong>
+ <h1> <strong>PasswordMeter_JS</strong></h1>
 </p>
 
 **Simple JavaScript Project to test password strength.**
