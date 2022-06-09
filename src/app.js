@@ -80,7 +80,8 @@ function chracterTypeWeakness(password, regex, type) {
             deduction: 30
         }
     }
-    if (matches.length <= 2) {
+    if (type == "first UpperCase") return;
+    if (matches.length <= 1) {
         return {
             message: `Your password could use more  ${type} letters`,
             deduction: 20
