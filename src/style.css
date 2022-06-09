@@ -22,7 +22,6 @@ body {
 }
 
 .strength-meter::before {
-  --strength: 25;
   content: "";
   position: absolute;
   left: 0;
@@ -37,10 +36,16 @@ body {
   width: 15%;
   padding: 0.25rem 0.75rem;
   border: 2px solid hsl(123, 95%, 20%);
-  border-radius: 1rem;
+  border-radius: 0.3rem;
   outline: none;
+  text-align: center;
 }
 
 .password-input:focus {
   border: 2px solid hsl(123, 95%, 35%);
+}
+
+.reasons > * {
+  margin-top: 0.5rem;
+  color: hsl(123, 95%, 30%);
 }

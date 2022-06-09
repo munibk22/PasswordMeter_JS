@@ -8,15 +8,16 @@
     <title>Password Strength</title>
     <link rel="stylesheet" href="style.css" type="text/css">
     </link>
-
+    <script defer src="./app.js"></script>
 </head>
 
 <body>
     <h1>Password Strength Test</h1>
-    <div class="strength-meter"></div>
+    <div class="strength-meter" id="strength-meter"></div>
     <input type="text" class='password-input' autofocus name="" id="password-input" aria-activedescendant="yes"
         aria-busy="true" aria-labelledby="password" value='password'>
-    <div id="reasons" class="reasons"></div>
+    <div id="reasons" class="reasons">
+    </div>
 </body>
 
 </html>
