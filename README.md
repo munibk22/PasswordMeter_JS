@@ -1,4 +1,4 @@
-### <p align="center" style="color: red; font-weight: bold font-size: 30px;"  >
+ <p align="center" style="color: red; font-weight: bold font-size: 30px;"  >
 
 ### PasswordMeter_JS
 
