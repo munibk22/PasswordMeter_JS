@@ -1,4 +1,4 @@
-\-\- Password Meter Test
+\-\- Password Meter Test Project
 <br />
 
 - Javascript
