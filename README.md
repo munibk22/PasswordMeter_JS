@@ -1,4 +1,4 @@
-\-\- Password Meter Test Project
+\-\- Password Meter Test Project https://munibk22.github.io/PasswordMeter_JS/
 <br />
 
 - Javascript
