@@ -9,15 +9,13 @@
 ***Fun and Simple JavaScript Project to test password strength.***
 </p>
 
-**Initial State:**
+**Display Error Message:**
 
-![Intial Loading page](src/media/1.png)
+![Display Error Messages](/src/media/5.png)
 
 **Weak Password:**
 
 ![Weak Password](src/media/2.png)
-
-![Display Error Messages](/src/media/5.png)
 
 **Dynamically displays error messages**
 
